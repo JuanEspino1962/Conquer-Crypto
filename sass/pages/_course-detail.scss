@@ -1,0 +1,22 @@
+/* ========================================
+   PÁGINAS INDIVIDUALES DE CURSOS
+   FullStack e Inteligencia Artificial
+======================================== */
+
+.course-detail {
+  &__content {
+    width: 100%;
+    max-width: 960px;
+    margin-inline: auto;
+
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .course-detail {
+    &__content {
+      max-width: 960px;
+    }
+  }
+}

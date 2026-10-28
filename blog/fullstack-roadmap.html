@@ -1,72 +1,233 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
-    <title>¿Qué es Full Stack developer | Academia Conquer Crypto</title>
-    <meta name="description" content="Aprende todo lo relacionado con el desarrollo FullStack">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="icon.png">
+    <title>Roadmap FullStack | Conquer Crypto</title>
+
+    <meta name="description"
+        content="Guía demostrativa sobre las tecnologías y conocimientos para aprender desarrollo FullStack.">
+
+    <link rel="icon" href="../icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/style.css">
-
-    <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" content="#172554">
 </head>
 
 <body>
 
-    <header>
-        <figure>
-            <img width="150px" src="../img/common/logotipo-conquer-crypto.png" alt="Logotipo de Conquer Crypto">
-        </figure>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../quienes-somos.html">Quiénes Somos</a></li>
-                <li><a href="../cursos.html">Cursos</a></li>
-                <li><a href="../blog.html">Blog</a></li>
-                <li><a href="../registro.html">Registro</a></li>
-                <li><a href="../login.html">Login</a></li>
-                <li><a href="../contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <a class="skip-link" href="#main-content">
+        Saltar al contenido principal
+    </a>
+
+    <!-- HEADER COMPARTIDO -->
+    <header class="site-header">
+        <div class="container site-header__inner">
+
+            <a class="site-header__brand" href="../index.html" aria-label="Conquer Crypto - Ir al inicio">
+                <span class="site-header__brand-name">CONQUER</span>
+                <span class="site-header__brand-accent">CRYPTO</span>
+            </a>
+
+            <button class="site-header__toggle" type="button" aria-label="Abrir menú de navegación"
+                aria-expanded="false" aria-controls="main-navigation">
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" aria-hidden="true" focusable="false">
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <nav class="site-header__nav" id="main-navigation" aria-label="Navegación principal" hidden>
+                <ul class="site-header__menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../quienes-somos.html">Quiénes somos</a></li>
+                    <li><a href="../cursos.html">Cursos</a></li>
+                    <li>
+                        <a href="../blog.html" aria-current="page">
+                            Blog
+                        </a>
+                    </li>
+                    <li><a href="../contacto.html">Contacto</a></li>
+                    <li><a href="../login.html">Acceso</a></li>
+                    <li><a href="../registro.html">Registro</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
 
-    <main>
-        <section>
-            <article>
-                <h1>Tecnologías para ser Full-Stack Developer - Roadmap Completo</h1>
-                <figure>
-                    <img width="400px" src="../img/blog/fullstack-roadmap.jpeg"
-                        alt="Tecnologías para ser Full-Stack Developer - Roadmap Completo">
-                </figure>
-                <p>En nuestro <a href="https://www.conquercrypto.com/post/que-es-fullstack-developer"
-                        target="_blank">anterior post</a> te contábamos qué significa ser un Full-Stack Developer, ese
-                    perfil que tanto buscan las empresas de la industria del desarrollo web y por que se pagan sueldos
-                    estratosféricos. Ahora que ya sabemos qué es ser un Full-Stack, ¿Te gustaría saber qué pasos seguir
-                    para conseguir ser uno de ellos y obtener la insignia de Full-Stack Developer? Te lo contamos en
-                    este post.</p>
+    <main id="main-content" tabindex="-1">
 
-                <h2>Tecnologías para llegar a ser un Full-Stack Developer</h2>
-                <p>Como ya os explicamos en el anterior post, un desarrollador Full-Stack debe poder estar involucrado
-                    en todas las partes que componen una aplicación web. Esto significa, que debe controlar todos los
-                    aspectos del funcionamiento de la herramienta, desde las dos vertientes principales: <strong>el
-                        Frontend y el Backend</strong>. Este doble conocimiento le va a facilitar su tarea diaria y un
-                    mejor seguimiento y supervisión del proyecto, ya que va a poder evaluar desde un prisma completo, si
-                    una funcionalidad va a ser fácil de aplicar o por el contrario llevará más recursos de lo habitual
-                    el poder desarrollarla.</p>
-            </article>
+        <!-- PRESENTACIÓN -->
+        <section class="blog-hero" aria-labelledby="roadmap-title">
+
+            <div class="container blog-hero__inner">
+
+                <p class="blog-hero__eyebrow">
+                    ACTUALIDAD TECNOLÓGICA
+                </p>
+
+                <h1 class="blog-hero__title" id="roadmap-title">
+                    Roadmap para ser desarrollador FullStack
+                </h1>
+
+                <p class="blog-hero__description">
+                    Una introducción a las tecnologías y conocimientos
+                    que forman parte del desarrollo web completo.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- CONTENIDO DEL ARTÍCULO -->
+        <section class="blog-learning" aria-labelledby="roadmap-content-title">
+
+            <div class="container blog-learning__inner course-detail__content">
+
+                <article>
+
+                    <h2 class="blog-learning__title" id="roadmap-content-title">
+                        ¿Por dónde empezar?
+                    </h2>
+
+                    <p class="blog-learning__description">
+                        El desarrollo FullStack combina conocimientos
+                        de frontend y backend. Para comprender cómo
+                        funciona una aplicación web es útil conocer
+                        ambas partes y la manera en que se comunican.
+                    </p>
+
+                    <p class="blog-learning__description">
+                        En el frontend se utilizan tecnologías como
+                        HTML, CSS y JavaScript para construir la
+                        estructura, presentación e interactividad
+                        de las páginas.
+                    </p>
+
+                    <p class="blog-learning__description">
+                        En el backend se trabaja con la lógica del
+                        servidor, el procesamiento de información
+                        y la comunicación con bases de datos.
+                        Existen diferentes lenguajes y herramientas
+                        para desarrollar estas funcionalidades.
+                    </p>
+
+                    <p class="blog-learning__description">
+                        También es importante aprender control
+                        de versiones con Git, comprender los
+                        fundamentos de HTTP y practicar la
+                        integración entre frontend y backend.
+                    </p>
+
+                    <p class="blog-learning__description">
+                        Este artículo forma parte de un proyecto
+                        demostrativo de desarrollo frontend.
+                        No representa un programa formativo
+                        comercial ni garantiza resultados
+                        académicos o profesionales.
+                    </p>
+
+                </article>
+
+            </div>
+        </section>
+
+        <!-- LLAMADA A LA ACCIÓN -->
+        <section class="blog-cta" aria-labelledby="roadmap-cta-title">
+
+            <div class="container blog-cta__inner">
+
+                <h2 class="blog-cta__title" id="roadmap-cta-title">
+                    Sigue explorando nuestro Blog
+                </h2>
+
+                <p class="blog-cta__description">
+                    Descubre los demás contenidos
+                    tecnológicos incluidos en este
+                    proyecto demostrativo.
+                </p>
+
+                <a class="button button--primary blog-cta__link" href="../blog.html">
+                    Volver al Blog
+                </a>
+
+            </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>© @jaespinomoreno 2026 - <a href="../aviso-legal.html">Aviso Legal</a></p>
+    <!-- FOOTER COMPARTIDO -->
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+
+            <div class="site-footer__brand">
+
+                <a class="site-footer__logo" href="../index.html" aria-label="Conquer Crypto - Ir al inicio">
+                    <span class="site-footer__logo-name">CONQUER</span>
+                    <span class="site-footer__logo-accent">CRYPTO</span>
+                </a>
+
+                <p class="site-footer__description">
+                    Formación tecnológica en desarrollo FullStack,
+                    Inteligencia Artificial y Blockchain.
+                </p>
+
+            </div>
+
+            <nav class="site-footer__navigation" aria-label="Navegación del pie de página">
+
+                <div class="site-footer__group">
+
+                    <h2 class="site-footer__heading">Explora</h2>
+
+                    <ul class="site-footer__list">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../quienes-somos.html">Quiénes somos</a></li>
+                        <li><a href="../cursos.html">Cursos</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../contacto.html">Contacto</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="site-footer__group">
+
+                    <h2 class="site-footer__heading">Tu cuenta</h2>
+
+                    <ul class="site-footer__list">
+                        <li><a href="../login.html">Acceso</a></li>
+                        <li><a href="../registro.html">Registro</a></li>
+                    </ul>
+
+                </div>
+
+            </nav>
+
+            <div class="site-footer__bottom">
+
+                <p class="site-footer__copyright">
+                    © 2026 Conquer Crypto. Proyecto demostrativo.
+                </p>
+
+                <a class="site-footer__legal" href="../aviso-legal.html">
+                    Aviso legal
+                </a>
+
+            </div>
+
+        </div>
     </footer>
+
     <script src="../js/bundle.js" defer></script>
+
 </body>
 
 </html>
