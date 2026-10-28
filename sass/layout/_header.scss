@@ -1,0 +1,166 @@
+@use "../abstracts/variables" as v;
+
+.site-header {
+  position: relative;
+  z-index: 100;
+  background-color: v.$color-header;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: v.$header-height;
+    padding-inline: v.$container-padding;
+  }
+
+  &__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: v.$color-white;
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 1.2;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:hover {
+      opacity: 0.85;
+    }
+
+    &:focus-visible {
+      outline: 2px solid v.$color-white;
+      outline-offset: 5px;
+    }
+  }
+
+  &__brand-accent {
+    padding: 5px 7px;
+    border-radius: 3px;
+    background-color: v.$color-primary;
+    color: v.$color-white;
+  }
+
+  &__toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    border-radius: 6px;
+    background-color: transparent;
+    color: v.$color-white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+
+    &:focus-visible {
+      outline: 2px solid v.$color-white;
+      outline-offset: 3px;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    padding: 20px;
+    background-color: v.$color-header;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    a {
+      display: block;
+      padding: 12px;
+      border-radius: 6px;
+      color: v.$color-white;
+      text-decoration: none;
+
+      &:hover,
+      &[aria-current="page"] {
+        background-color: rgba(255, 255, 255, 0.12);
+      }
+
+      &:focus-visible {
+        outline: 2px solid v.$color-white;
+        outline-offset: 2px;
+      }
+    }
+  }
+}
+
+.site-header {
+  &__nav[hidden] {
+    display: none;
+  }
+
+  &__toggle {
+    transition: background-color 0.2s ease;
+
+    svg {
+      transition: transform 0.2s ease;
+    }
+
+    &[aria-expanded="true"] svg {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header__toggle,
+  .site-header__toggle svg {
+    transition: none;
+  }
+}
+
+/* ========================================
+   HEADER — DESKTOP (1024 px en adelante)
+======================================== */
+
+@media (min-width: 1024px) {
+  .site-header {
+    &__inner {
+      min-height: 88px;
+      padding-inline: 32px;
+      gap: 24px;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    &__nav,
+    &__nav[hidden] {
+      display: block;
+      position: static;
+      width: auto;
+      padding: 0;
+      background: transparent;
+    }
+
+    &__menu {
+      flex-direction: row;
+      align-items: center;
+      gap: 4px;
+    }
+
+    &__menu a {
+      padding: 10px 8px;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+  }
+}

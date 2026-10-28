@@ -1,0 +1,19 @@
+// Punto de entrada global. Los módulos se activarán al implementarlos.
+@use "settings";
+@use "abstracts/variables";
+@use "abstracts/mixins";
+@use "base/reset";
+@use "base/base";
+@use "base/typography";
+@use "layout/header";
+@use "layout/footer";
+@use "components/buttons";
+@use "pages/home";
+@use "components/components";
+@use "pages/about";
+@use "pages/courses";
+@use "pages/blog";
+@use "pages/contact";
+@use "pages/login";
+@use "pages/registro";
+@use "pages/aviso-legal";

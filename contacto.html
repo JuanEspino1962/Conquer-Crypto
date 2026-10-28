@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto | Conquer Crypto</title>
+    <meta name="description"
+        content="Página de contacto demostrativa de Conquer Crypto. Conoce nuestra formación y consulta la información de la academia.">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#172554">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">
+        Saltar al contenido principal
+    </a>
+
+    <!-- HEADER COMPARTIDO -->
+    <header class="site-header">
+        <div class="container site-header__inner">
+
+            <a class="site-header__brand" href="index.html" aria-label="Conquer Crypto - Ir al inicio">
+                <span class="site-header__brand-name">CONQUER</span>
+                <span class="site-header__brand-accent">CRYPTO</span>
+            </a>
+
+            <button class="site-header__toggle" type="button" aria-label="Abrir menú de navegación"
+                aria-expanded="false" aria-controls="main-navigation">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" aria-hidden="true" focusable="false">
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <nav class="site-header__nav" id="main-navigation" aria-label="Navegación principal" hidden>
+                <ul class="site-header__menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li>
+                        <a href="contacto.html" aria-current="page">
+                            Contacto
+                        </a>
+                    </li>
+                    <li><a href="login.html">Acceso</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+
+        <!-- PRESENTACIÓN -->
+        <section class="contact-hero" aria-labelledby="contact-hero-title">
+            <div class="container contact-hero__inner">
+
+                <p class="contact-hero__eyebrow">
+                    ESTAMOS AQUÍ PARA AYUDARTE
+                </p>
+
+                <h1 class="contact-hero__title" id="contact-hero-title">
+                    Contacta con nosotros
+                </h1>
+
+                <p class="contact-hero__description">
+                    ¿Tienes alguna pregunta sobre nuestra formación?
+                    Descubre cómo puedes ponerte en contacto con
+                    Conquer Crypto.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- FORMULARIO -->
+        <section class="contact-form" aria-labelledby="contact-form-title">
+            <div class="container contact-form__inner">
+
+                <header class="contact-form__header">
+                    <h2 class="contact-form__title" id="contact-form-title">
+                        Envíanos tu consulta
+                    </h2>
+
+                    <p class="contact-form__description">
+                        Este formulario es una demostración visual.
+                        Los campos están preparados para una futura
+                        integración con un servicio de contacto.
+                    </p>
+
+                    <p class="contact-form__required-note">
+                        Los campos marcados con * son obligatorios.
+                    </p>
+                </header>
+
+                <form class="contact-form__form" aria-describedby="contact-form-notice">
+
+                    <div class="contact-form__grid">
+
+                        <!-- NOMBRE -->
+                        <div class="contact-form__field">
+                            <label class="contact-form__label" for="contact-name">
+                                Nombre completo *
+                            </label>
+
+                            <input class="contact-form__input" id="contact-name" name="name" type="text"
+                                autocomplete="name" placeholder="Tu nombre" required>
+                        </div>
+
+                        <!-- CORREO -->
+                        <div class="contact-form__field">
+                            <label class="contact-form__label" for="contact-email">
+                                Correo electrónico *
+                            </label>
+
+                            <input class="contact-form__input" id="contact-email" name="email" type="email"
+                                autocomplete="email" placeholder="nombre@ejemplo.com" required>
+                        </div>
+
+                        <!-- ASUNTO -->
+                        <div class="contact-form__field contact-form__field--full">
+                            <label class="contact-form__label" for="contact-subject">
+                                Asunto *
+                            </label>
+
+                            <input class="contact-form__input" id="contact-subject" name="subject" type="text"
+                                placeholder="Motivo de tu consulta" required>
+                        </div>
+
+                        <!-- MENSAJE -->
+                        <div class="contact-form__field contact-form__field--full">
+                            <label class="contact-form__label" for="contact-message">
+                                Mensaje *
+                            </label>
+
+                            <textarea class="contact-form__textarea" id="contact-message" name="message" rows="6"
+                                placeholder="Escribe aquí tu consulta..." required></textarea>
+                        </div>
+
+                    </div>
+
+                    <p class="contact-form__notice" id="contact-form-notice">
+                        Formulario demostrativo: actualmente no se
+                        envían ni almacenan los datos introducidos.
+                    </p>
+
+                    <button class="button button--primary contact-form__submit" type="submit" disabled>
+                        Enviar mensaje (no disponible)
+                    </button>
+
+                </form>
+            </div>
+        </section>
+
+        <!-- INFORMACIÓN -->
+        <section class="contact-info" aria-labelledby="contact-info-title">
+            <div class="container contact-info__inner">
+
+                <h2 class="contact-info__title" id="contact-info-title">
+                    Información importante
+                </h2>
+
+                <p class="contact-info__description">
+                    Conquer Crypto es un proyecto web demostrativo.
+                    El formulario de contacto no está conectado
+                    actualmente a un servicio de recepción de mensajes.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- LLAMADA A LA ACCIÓN -->
+        <section class="contact-cta" aria-labelledby="contact-cta-title">
+            <div class="container contact-cta__inner">
+
+                <h2 class="contact-cta__title" id="contact-cta-title">
+                    Descubre nuestra formación
+                </h2>
+
+                <p class="contact-cta__description">
+                    Explora los cursos disponibles y conoce
+                    las áreas de aprendizaje de nuestra academia.
+                </p>
+
+                <a class="button button--primary contact-cta__link" href="cursos.html">
+                    Explorar cursos
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER COMPARTIDO -->
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+
+            <div class="site-footer__brand">
+                <a class="site-footer__logo" href="index.html" aria-label="Conquer Crypto - Ir al inicio">
+                    <span class="site-footer__logo-name">CONQUER</span>
+                    <span class="site-footer__logo-accent">CRYPTO</span>
+                </a>
+
+                <p class="site-footer__description">
+                    Formación tecnológica en desarrollo FullStack,
+                    Inteligencia Artificial y Blockchain.
+                </p>
+            </div>
+
+            <nav class="site-footer__navigation" aria-label="Navegación del pie de página">
+                <div class="site-footer__group">
+                    <h2 class="site-footer__heading">Explora</h2>
+
+                    <ul class="site-footer__list">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="site-footer__group">
+                    <h2 class="site-footer__heading">Tu cuenta</h2>
+
+                    <ul class="site-footer__list">
+                        <li><a href="login.html">Acceso</a></li>
+                        <li><a href="registro.html">Registro</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="site-footer__bottom">
+                <p class="site-footer__copyright">
+                    © 2026 Conquer Crypto. Proyecto demostrativo.
+                </p>
+
+                <a class="site-footer__legal" href="aviso-legal.html">
+                    Aviso legal
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/bundle.js" defer></script>
+
+</body>
+
+</html>

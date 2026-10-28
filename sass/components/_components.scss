@@ -1,0 +1,167 @@
+/* ========================================
+   COURSE CARD — COMPONENTE REUTILIZABLE
+======================================== */
+
+.course-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background-color: #ffffff;
+
+  &__media {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background-color: #dbeafe;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__content {
+    padding: 24px 20px;
+  }
+
+  &__title {
+    margin: 0 0 12px;
+    color: #172554;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  &__description {
+    margin: 0 0 20px;
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    color: #1d4ed8;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &::after {
+      content: "→";
+      margin-left: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    &:hover {
+      color: #172554;
+
+      &::after {
+        transform: translateX(4px);
+      }
+    }
+
+    &:focus-visible {
+      outline: 3px solid #2563eb;
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .course-card__link,
+  .course-card__link::after {
+    transition: none;
+  }
+}
+
+/* ========================================
+   BLOG CARD — COMPONENTE REUTILIZABLE
+======================================== */
+
+.blog-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background-color: #f8fafc;
+
+  &__media {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background-color: #dbeafe;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__content {
+    padding: 24px 20px;
+  }
+
+  &__title {
+    margin: 0 0 12px;
+    color: #172554;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  &__description {
+    margin: 0 0 20px;
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    color: #1d4ed8;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &::after {
+      content: "→";
+      margin-left: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    &:hover {
+      color: #172554;
+
+      &::after {
+        transform: translateX(4px);
+      }
+    }
+
+    &:focus-visible {
+      outline: 3px solid #2563eb;
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blog-card__link,
+  .blog-card__link::after {
+    transition: none;
+  }
+}

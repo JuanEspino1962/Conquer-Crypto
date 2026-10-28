@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Acceso | Conquer Crypto</title>
+    <meta name="description"
+        content="Página demostrativa de acceso a la plataforma de formación tecnológica Conquer Crypto.">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#172554">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">
+        Saltar al contenido principal
+    </a>
+
+    <!-- HEADER COMPARTIDO -->
+    <header class="site-header">
+        <div class="container site-header__inner">
+
+            <a class="site-header__brand" href="index.html" aria-label="Conquer Crypto - Ir al inicio">
+                <span class="site-header__brand-name">CONQUER</span>
+                <span class="site-header__brand-accent">CRYPTO</span>
+            </a>
+
+            <button class="site-header__toggle" type="button" aria-label="Abrir menú de navegación"
+                aria-expanded="false" aria-controls="main-navigation">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" aria-hidden="true" focusable="false">
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <nav class="site-header__nav" id="main-navigation" aria-label="Navegación principal" hidden>
+                <ul class="site-header__menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li>
+                        <a href="login.html" aria-current="page">
+                            Acceso
+                        </a>
+                    </li>
+                    <li><a href="registro.html">Registro</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+
+        <!-- PRESENTACIÓN -->
+        <section class="login-hero" aria-labelledby="login-hero-title">
+            <div class="container login-hero__inner">
+
+                <p class="login-hero__eyebrow">
+                    ÁREA DE USUARIOS
+                </p>
+
+                <h1 class="login-hero__title" id="login-hero-title">
+                    Accede a tu cuenta
+                </h1>
+
+                <p class="login-hero__description">
+                    Un espacio preparado para el futuro acceso
+                    a nuestra plataforma de formación tecnológica.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- FORMULARIO DE ACCESO -->
+        <section class="login-form" aria-labelledby="login-form-title">
+            <div class="container login-form__inner">
+
+                <header class="login-form__header">
+                    <h2 class="login-form__title" id="login-form-title">
+                        Iniciar sesión
+                    </h2>
+
+                    <p class="login-form__description">
+                        Esta interfaz es demostrativa.
+                        La autenticación de usuarios todavía
+                        no está disponible.
+                    </p>
+                </header>
+
+                <form class="login-form__form" autocomplete="off">
+
+                    <div class="login-form__field">
+                        <label class="login-form__label" for="login-email">
+                            Correo electrónico
+                        </label>
+
+                        <input class="login-form__input" id="login-email" name="email" type="email"
+                            placeholder="nombre@ejemplo.com" autocomplete="off" disabled>
+                    </div>
+
+                    <div class="login-form__field">
+                        <label class="login-form__label" for="login-password">
+                            Contraseña
+                        </label>
+
+                        <input class="login-form__input" id="login-password" name="password" type="password"
+                            placeholder="Contraseña" autocomplete="off" disabled>
+                    </div>
+
+                    <p class="login-form__notice">
+                        No introduzcas credenciales reales.
+                        Este proyecto no dispone de un sistema
+                        de autenticación ni gestión de sesiones.
+                    </p>
+
+                    <button class="button button--primary login-form__submit" type="button" disabled>
+                        Acceder (no disponible)
+                    </button>
+
+                </form>
+
+                <p class="login-form__register">
+                    ¿Todavía no tienes una cuenta?
+                    <a href="registro.html">
+                        Regístrate
+                    </a>
+                </p>
+
+            </div>
+        </section>
+
+        <!-- INFORMACIÓN DEMOSTRATIVA -->
+        <section class="login-info" aria-labelledby="login-info-title">
+            <div class="container login-info__inner">
+
+                <h2 class="login-info__title" id="login-info-title">
+                    Acceso demostrativo
+                </h2>
+
+                <p class="login-info__description">
+                    Conquer Crypto es un proyecto web demostrativo.
+                    Esta página no permite iniciar sesión,
+                    verificar credenciales ni acceder
+                    a cuentas reales.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- LLAMADA A LA ACCIÓN -->
+        <section class="login-cta" aria-labelledby="login-cta-title">
+            <div class="container login-cta__inner">
+
+                <h2 class="login-cta__title" id="login-cta-title">
+                    Descubre nuestros cursos
+                </h2>
+
+                <p class="login-cta__description">
+                    Explora las áreas de formación tecnológica
+                    disponibles en nuestra academia.
+                </p>
+
+                <a class="button button--primary login-cta__link" href="cursos.html">
+                    Explorar cursos
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER COMPARTIDO -->
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+
+            <div class="site-footer__brand">
+                <a class="site-footer__logo" href="index.html" aria-label="Conquer Crypto - Ir al inicio">
+                    <span class="site-footer__logo-name">CONQUER</span>
+                    <span class="site-footer__logo-accent">CRYPTO</span>
+                </a>
+
+                <p class="site-footer__description">
+                    Formación tecnológica en desarrollo FullStack,
+                    Inteligencia Artificial y Blockchain.
+                </p>
+            </div>
+
+            <nav class="site-footer__navigation" aria-label="Navegación del pie de página">
+                <div class="site-footer__group">
+                    <h2 class="site-footer__heading">Explora</h2>
+
+                    <ul class="site-footer__list">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="site-footer__group">
+                    <h2 class="site-footer__heading">Tu cuenta</h2>
+
+                    <ul class="site-footer__list">
+                        <li><a href="login.html">Acceso</a></li>
+                        <li><a href="registro.html">Registro</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="site-footer__bottom">
+                <p class="site-footer__copyright">
+                    © 2026 Conquer Crypto. Proyecto demostrativo.
+                </p>
+
+                <a class="site-footer__legal" href="aviso-legal.html">
+                    Aviso legal
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/bundle.js" defer></script>
+
+</body>
+
+</html>

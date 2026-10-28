@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro | Conquer Crypto</title>
+    <meta name="description"
+        content="Página demostrativa de registro de usuarios en la academia tecnológica Conquer Crypto.">
+
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="theme-color" content="#172554">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">
+        Saltar al contenido principal
+    </a>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container site-header__inner">
+
+            <a class="site-header__brand" href="index.html" aria-label="Conquer Crypto - Ir al inicio">
+                <span class="site-header__brand-name">CONQUER</span>
+                <span class="site-header__brand-accent">CRYPTO</span>
+            </a>
+
+            <button class="site-header__toggle" type="button" aria-label="Abrir menú de navegación"
+                aria-expanded="false" aria-controls="main-navigation">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" aria-hidden="true" focusable="false">
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <nav class="site-header__nav" id="main-navigation" aria-label="Navegación principal" hidden>
+                <ul class="site-header__menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html">Acceso</a></li>
+                    <li>
+                        <a href="registro.html" aria-current="page">
+                            Registro
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+
+        <!-- PRESENTACIÓN -->
+        <section class="register-hero" aria-labelledby="register-hero-title">
+            <div class="container register-hero__inner">
+
+                <p class="register-hero__eyebrow">
+                    ÁREA DE USUARIOS
+                </p>
+
+                <h1 class="register-hero__title" id="register-hero-title">
+                    Crea tu cuenta
+                </h1>
+
+                <p class="register-hero__description">
+                    Un espacio preparado para el futuro registro
+                    en nuestra plataforma de formación tecnológica.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- FORMULARIO DEMOSTRATIVO -->
+        <section class="register-form" aria-labelledby="register-form-title">
+            <div class="container register-form__inner">
+
+                <header class="register-form__header">
+
+                    <h2 class="register-form__title" id="register-form-title">
+                        Registrarse
+                    </h2>
+
+                    <p class="register-form__description">
+                        Esta interfaz es demostrativa.
+                        El registro de usuarios todavía
+                        no está disponible.
+                    </p>
+
+                </header>
+
+                <form class="register-form__form" autocomplete="off">
+
+                    <!-- NOMBRE -->
+                    <div class="register-form__field">
+                        <label class="register-form__label" for="register-name">
+                            Nombre completo
+                        </label>
+
+                        <input class="register-form__input" type="text" id="register-name" name="name"
+                            placeholder="Tu nombre" autocomplete="off" disabled>
+                    </div>
+
+                    <!-- CORREO -->
+                    <div class="register-form__field">
+                        <label class="register-form__label" for="register-email">
+                            Correo electrónico
+                        </label>
+
+                        <input class="register-form__input" type="email" id="register-email" name="email"
+                            placeholder="nombre@ejemplo.com" autocomplete="off" disabled>
+                    </div>
+
+                    <!-- CONTRASEÑA -->
+                    <div class="register-form__field">
+                        <label class="register-form__label" for="register-password">
+                            Contraseña
+                        </label>
+
+                        <input class="register-form__input" type="password" id="register-password" name="password"
+                            placeholder="Contraseña" autocomplete="off" disabled>
+                    </div>
+
+                    <!-- CONFIRMAR CONTRASEÑA -->
+                    <div class="register-form__field">
+                        <label class="register-form__label" for="register-confirm-password">
+                            Confirmar contraseña
+                        </label>
+
+                        <input class="register-form__input" type="password" id="register-confirm-password"
+                            name="confirm-password" placeholder="Repite tu contraseña" autocomplete="off" disabled>
+                    </div>
+
+                    <p class="register-form__notice">
+                        No introduzcas datos personales ni
+                        contraseñas reales. Este proyecto no
+                        dispone de registro de usuarios.
+                    </p>
+
+                    <button class="button button--primary register-form__submit" type="button" disabled>
+                        Crear cuenta (no disponible)
+                    </button>
+
+                </form>
+
+                <p class="register-form__login">
+                    ¿Ya tienes una cuenta?
+                    <a href="login.html">Inicia sesión</a>
+                </p>
+
+            </div>
+        </section>
+
+        <!-- INFORMACIÓN DEMOSTRATIVA -->
+        <section class="register-info" aria-labelledby="register-info-title">
+            <div class="container register-info__inner">
+
+                <h2 class="register-info__title" id="register-info-title">
+                    Registro demostrativo
+                </h2>
+
+                <p class="register-info__description">
+                    Conquer Crypto es un proyecto web
+                    demostrativo. Esta página no permite
+                    crear cuentas ni almacenar información
+                    personal o contraseñas.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="register-cta" aria-labelledby="register-cta-title">
+            <div class="container register-cta__inner">
+
+                <h2 class="register-cta__title" id="register-cta-title">
+                    Descubre nuestros cursos
+                </h2>
+
+                <p class="register-cta__description">
+                    Explora nuestras áreas de formación
+                    en desarrollo FullStack e
+                    Inteligencia Artificial.
+                </p>
+
+                <a class="button button--primary register-cta__link" href="cursos.html">
+                    Explorar cursos
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+
+            <div class="site-footer__brand">
+                <a class="site-footer__logo" href="index.html" aria-label="Conquer Crypto - Ir al inicio">
+                    <span class="site-footer__logo-name">CONQUER</span>
+                    <span class="site-footer__logo-accent">CRYPTO</span>
+                </a>
+
+                <p class="site-footer__description">
+                    Formación tecnológica en desarrollo FullStack,
+                    Inteligencia Artificial y Blockchain.
+                </p>
+            </div>
+
+            <nav class="site-footer__navigation" aria-label="Navegación del pie de página">
+                <div class="site-footer__group">
+                    <h2 class="site-footer__heading">Explora</h2>
+
+                    <ul class="site-footer__list">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="site-footer__group">
+                    <h2 class="site-footer__heading">Tu cuenta</h2>
+
+                    <ul class="site-footer__list">
+                        <li><a href="login.html">Acceso</a></li>
+                        <li><a href="registro.html">Registro</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="site-footer__bottom">
+                <p class="site-footer__copyright">
+                    © 2026 Conquer Crypto. Proyecto demostrativo.
+                </p>
+
+                <a class="site-footer__legal" href="aviso-legal.html">
+                    Aviso legal
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/bundle.js" defer></script>
+
+</body>
+
+</html>

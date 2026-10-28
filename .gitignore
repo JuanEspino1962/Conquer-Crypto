@@ -1,0 +1,17 @@
+# Dependencias
+node_modules/
+
+# Archivos del sistema
+.DS_Store
+
+# Registros
+*.log
+
+# Archivos temporales de desarrollo
+diagnostico.html
+__plantilla copy.html
+
+# Variables de entorno privadas
+.env
+.env.*
+!.env.example
